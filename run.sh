@@ -1,9 +1,12 @@
 rm -rf bin/*
 rm -rf executables/Solution.java
-javac -d bin/ GenerateExec.java
-for i in $(ls ./problems);
-    do java -cp bin/ GenerateExec $i;
+javac -cp "lib/json-simple-1.1.1.jar" -d bin/ GenerateExec.java
+java -cp lib/json-simple-1.1.1.jar:bin/ GenerateExec exec1161;
+for i in $(ls ./solutions);
+    do javac -d bin/ ./solutions/$i;
 done
-
-javac -d bin/ executables/*.java LeetCode.java
+javac -d bin/ LeetCode.java
 java -cp bin/ LeetCode
+# for i in $(ls ./solutions);
+#     do java -cp bin/solutions ${i%.*};
+# done

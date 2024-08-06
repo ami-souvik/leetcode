@@ -1,41 +1,50 @@
 {
     "type": "problem",
-
-    "className": "Solution",
-    "entryPoints": [
+    "problemName": "1161.maximum-level-sum-of-a-binary-tree",
+    "testCases": [
         {
-            "methodName": "maxLevelSum",
-            "returnType": "int",
-            "args": [
+            "name": "Case 1",
+            "variables": [
                 {
                     "type": "TreeNode",
-                    "variableName": "root"
+                    "value": "[1,7,0,7,-8,null,null]"
+                }
+            ]
+        },
+        {
+            "name": "Case 2",
+            "variables": [
+                {
+                    "type": "TreeNode",
+                    "value": "[989,null,10250,98693,-89388,null,null,null,-32127]"
+                }
+            ]
+        },
+        {
+            "name": "Case 3",
+            "variables": [
+                {
+                    "type": "TreeNode",
+                    "value": "[-100,-200,-300,-20,-5,-10,null]"
                 }
             ]
         }
     ],
-    "mainEntrypoint": "maxLevelSum",
-    "testCases": [
-        {
-            "name": "Case 1",
-            "variables": {
-                "name": "root",
-                "value": "[1,7,0,7,-8,null,null]"
+    "metadata": {
+        "filename": "exec1161",
+        "className": "Solution",
+        "methods": [
+            {
+                "name": "maxLevelSum",
+                "returnType": "int",
+                "args": [
+                    {
+                        "type": "TreeNode",
+                        "variableName": "root"
+                    }
+                ]
             }
-        },
-        {
-            "name": "Case 2",
-            "variables": {
-                "name": "root",
-                "value": "[989,null,10250,98693,-89388,null,null,null,-32127]"
-            }
-        },
-        {
-            "name": "Case 3",
-            "variables": {
-                "name": "root",
-                "value": "[-100,-200,-300,-20,-5,-10,null]"
-            }
-        }
-    ]
+        ],
+        "mainMethod": "maxLevelSum"
+    }
 }
