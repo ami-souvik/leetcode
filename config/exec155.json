@@ -1,0 +1,44 @@
+{
+    "testCases": [],
+
+
+    "type": "design",
+    "problemName": "155.min-stack",
+    "metadata": {
+        "filename": "exec155",
+        "className": "MinStack",
+        "methods": [
+            {
+                "name": "MinStack",
+                "returnType": null,
+                "args": []
+            },
+            {
+                "name": "push",
+                "returnType": "void",
+                "args": [
+                    {
+                        "type": "int",
+                        "variableName": "val"
+                    }
+                ]
+            },
+            {
+                "name": "pop",
+                "returnType": "void",
+                "args": []
+            },
+            {
+                "name": "top",
+                "returnType": "int",
+                "args": []
+            },
+            {
+                "name": "getMin",
+                "returnType": "int",
+                "args": []
+            }
+        ],
+        "mainMethod": ""
+    }
+}

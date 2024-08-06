@@ -1,0 +1,28 @@
+{
+    "testCases": [],
+
+
+    "type": "problem",
+    "problemName": "6.zigzag-conversion",
+    "metadata": {
+        "filename": "exec6",
+        "className": "Solution",
+        "methods": [
+            {
+                "name": "convert",
+                "returnType": "String",
+                "args": [
+                    {
+                        "type": "String",
+                        "variableName": "s"
+                    },
+                    {
+                        "type": "int",
+                        "variableName": "numRows"
+                    }
+                ]
+            }
+        ],
+        "mainMethod": "convert"
+    }
+}

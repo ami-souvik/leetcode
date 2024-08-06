@@ -1,6 +1,4 @@
 {
-    "type": "problem",
-    "problemName": "1161.maximum-level-sum-of-a-binary-tree",
     "testCases": [
         {
             "name": "Case 1",
@@ -30,6 +28,10 @@
             ]
         }
     ],
+
+
+    "type": "problem",
+    "problemName": "1161.maximum-level-sum-of-a-binary-tree",
     "metadata": {
         "filename": "exec1161",
         "className": "Solution",

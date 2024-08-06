@@ -1,8 +1,10 @@
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
+import java.lang.reflect.Method;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -16,8 +18,8 @@ import org.json.simple.parser.*;
 import javax.naming.spi.Resolver;
 
 public class GenerateExec {
-    static String GENERATED_DIR = "./solutions";
-    static String EXEC_DIR = "./testcases";
+    static String GENERATED_DIR = "./bin";
+    static String EXEC_DIR = "./config";
 
     public static void main(String[] args) throws IOException {
         if (args.length > 1) {
@@ -26,6 +28,15 @@ public class GenerateExec {
         } else if (args.length == 1) {
             generateFile(parseExec(args[0]));
         }
+
+        // generates all
+        /**
+         * File solutionDirPath = new File(EXEC_DIR);
+         * String contents[] = solutionDirPath.list();
+         * for (String file : contents) {
+         * generateFile(parseExec(file.substring(0, file.length() - 5)));
+         * }
+         */
     }
 
     private static JSONObject parseExec(String execId) {
