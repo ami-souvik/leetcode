@@ -1,0 +1,20 @@
+{
+    "type": "design",
+
+    "classname": "MinStack",
+    "entrypoint": {
+        "methodname": "maxLevelSum",
+        "returntype": "int",
+        "args": [
+            {
+                "type": "TreeNode",
+                "variablename": "root"
+            }
+        ]
+    },
+    "testcases": [
+        {
+
+        }
+    ]
+}

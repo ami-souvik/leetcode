@@ -1,0 +1,41 @@
+{
+    "type": "problem",
+
+    "className": "Solution",
+    "entryPoints": [
+        {
+            "methodName": "maxLevelSum",
+            "returnType": "int",
+            "args": [
+                {
+                    "type": "TreeNode",
+                    "variableName": "root"
+                }
+            ]
+        }
+    ],
+    "mainEntrypoint": "maxLevelSum",
+    "testCases": [
+        {
+            "name": "Case 1",
+            "variables": {
+                "name": "root",
+                "value": "[1,7,0,7,-8,null,null]"
+            }
+        },
+        {
+            "name": "Case 2",
+            "variables": {
+                "name": "root",
+                "value": "[989,null,10250,98693,-89388,null,null,null,-32127]"
+            }
+        },
+        {
+            "name": "Case 3",
+            "variables": {
+                "name": "root",
+                "value": "[-100,-200,-300,-20,-5,-10,null]"
+            }
+        }
+    ]
+}
